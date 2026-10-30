@@ -9,12 +9,12 @@ class Solution {
 
             int current = nums2[i];
 
-            // Remove elements smaller than current
+            
             while (!stack.isEmpty() && stack.peek() < current) {
                 stack.pop();
             }
 
-            // If stack is empty, no greater element
+            
             if (stack.isEmpty()) {
                 map.put(current, -1);
             } else {
@@ -24,7 +24,7 @@ class Solution {
             stack.push(current);
         }
 
-        // Build answer for nums1
+        
         int[] ans = new int[nums1.length];
 
         for (int i = 0; i < nums1.length; i++) {
