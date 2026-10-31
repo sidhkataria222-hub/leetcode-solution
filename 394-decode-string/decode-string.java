@@ -1,5 +1,5 @@
 import java.util.*;
-
+//update kro count ko
 class Solution {
     public String decodeString(String s) {
         Stack<Integer> countStack = new Stack<>();
@@ -25,7 +25,7 @@ class Solution {
             else if (ch == ']') {
                 int repeat = countStack.pop();
                 StringBuilder prev = stringStack.pop();
-
+//reset the count
                 for (int i = 0; i < repeat; i++) {
                     prev.append(curr);
                 }
@@ -42,3 +42,4 @@ class Solution {
     }
 }
 //repeat count check hogaaaa
+//]check
