@@ -11,7 +11,7 @@ class Solution {
                 continue;
             }
 
-            if (part.equals("..")) {
+            if (part.equals("..")) { 
                 if (!st.isEmpty()) {
                     st.pop();
                 }
